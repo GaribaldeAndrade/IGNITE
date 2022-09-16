@@ -1,13 +1,16 @@
 import express from 'express'
+import {PrismaClient} from '@prisma/client'
 
 const app = express()
-
+const prisma = new PrismaClient() 
 
 // http://localhost:3333/ads
 // HTTP methods / API RESTful / HTTP Codes
 // GET, POST, PUT, DELETE, PATCH
 
 app.get('/games', (req, res) => {
+
+
   return res.json([]);
 });
 
