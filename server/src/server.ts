@@ -28,6 +28,7 @@ app.get('/games/:id/ads', (request, response) => {
 
 app.get('/ads/:id/discord', (request, response) => {
     // const adId = request.params.id;
+      
   return response.json([])
 
 })
